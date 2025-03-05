@@ -15,4 +15,7 @@ router.get('/contact', homeController.getContactPage);
 // Products page route
 router.get('/products', homeController.getProductsPage);
 
+// Login and register page
+router.get('/login-reg', homeController.getLoginPage);
+
 module.exports = router;

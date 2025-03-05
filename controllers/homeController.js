@@ -16,3 +16,7 @@ exports.getContactPage = (req, res) => {
 exports.getProductsPage = (req, res) => {
   res.sendFile(path.join(__dirname, '../public', 'products.html'));
 };
+
+exports.getLoginPage = (req, res) => {
+  res.sendFile(path.join(__dirname, '../public', 'login-reg.html'));
+}
