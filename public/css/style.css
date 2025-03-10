@@ -251,6 +251,10 @@ h1, h2, h3, h4, h5,
 .color-white-opacity-5 {
   color: rgba(255, 255, 255, 0.5); }
 
+.color-white {
+  color: white;
+}
+
 .btn.btn-outline-white {
   border-color: #fff;
   background: transparent;
