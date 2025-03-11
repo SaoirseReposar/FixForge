@@ -1846,3 +1846,9 @@ form .btn {
     .form button{
       margin-top: 20px;
     }
+
+    .booking-container {
+      max-width: 300px;
+      width: 100%;
+      margin: auto;
+    }
