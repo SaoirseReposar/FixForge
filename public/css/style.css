@@ -4,6 +4,11 @@
   display: none; 
 }
 
+#profile-section h2, 
+#profile-section p {
+  color: #636363;
+}
+
 html {
   overflow-x: hidden; }
 
