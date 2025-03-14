@@ -1,0 +1,23 @@
+name: GitHub to Discord Webhook
+
+on: push
+
+jobs:
+  notify_discord:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send Webhook to Discord
+        run: |
+          curl -X POST -H "Content-Type: application/json" \
+          -d '{
+            "content": "**New push to the repo!**",
+            "embeds": [
+              {
+                "title": "New Commit by ${{ github.actor }}",
+                "description": "`${{ github.event.head_commit.message }}`",
+                "url": "${{ github.event.head_commit.url }}",
+                "color": 16776960
+              }
+            ]
+          }' \
+          https://discord.com/api/webhooks/1349732529598365777/_uD8aRUxhPaYm5BLivX7p3JMYJjp03gSHtj9ZwzLZ1vYpBW-tGY_OCLh6Sb_kdQkx73b
