@@ -213,7 +213,9 @@ body {
   line-height: 1.7;
   color: #364d59 !important;
   font-weight: 300;
-  font-size: 1rem; }
+  font-size: 1rem;
+  background-color: white;
+ }
 
 ::-moz-selection {
   background: #000;
@@ -234,7 +236,7 @@ a {
 h1, h2, h3, h4, h5,
 .h1, .h2, .h3, .h4, .h5 {
   font-weight: 300;
-  color: white; }
+  color: black; }
 
 .border-2 {
   border-width: 2px; }
@@ -268,7 +270,7 @@ h1, h2, h3, h4, h5,
   line-height: 1 !important; }
 
 .bg-black {
-  background: #000; }
+  background: white; }
 
 .site-section {
   padding: 2.5em 0; }
@@ -473,7 +475,7 @@ h1, h2, h3, h4, h5,
         margin-left: 15px;
         margin-right: 15px;
         padding: 20px 0px;
-        color: #fff !important;
+        color: black !important;
         display: inline-block;
         text-decoration: none !important; }
         .site-navbar .site-navigation .site-menu > li > a:hover {
@@ -569,6 +571,10 @@ h1, h2, h3, h4, h5,
           margin-top: 0px;
           visibility: visible;
           opacity: 1; }
+
+.nav-link {
+  font-weight: bold;
+}
 
 .site-mobile-menu {
   width: 300px;
@@ -1229,10 +1235,10 @@ h1, h2, h3, h4, h5,
       left: 0;
       right: 0;
       bottom: 0;
-      opacity: .5;
-      background: #000; }
+      opacity: 1;
+      background: white; }
     .ftco-cover-1.overlay h1 {
-      color: #fff;
+      color: black;
       font-size: 3rem;
       font-weight: 900; }
       .ftco-cover-1.overlay h1.line-bottom {
@@ -1247,9 +1253,9 @@ h1, h2, h3, h4, h5,
           height: 7px;
           left: 0; }
     .ftco-cover-1.overlay p {
-      color: #fff; }
+      color: black; }
       .ftco-cover-1.overlay p a {
-        color: #fff;
+        color: black;
         text-decoration: underline;
         font-weight: 700; }
         .ftco-cover-1.overlay p a:hover {
@@ -1851,4 +1857,47 @@ form .btn {
       max-width: 300px;
       width: 100%;
       margin: auto;
+    }
+
+    .left-half {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: white;
+      padding: 20px;
+      font-weight: bold;
+    }
+
+    .left-half h1,
+    .left-half h2 {
+      margin-bottom: 10px;
+    }
+
+    .left-half .paragraph-text {
+      font-size: 1rem;
+      color: black;
+      margin-top: 10px;
+      text-align: center;
+      font-weight: bold;
+    }
+    
+    .right-half {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: white;
+    }
+
+    .right-half .logo {
+      max-width: 80%;
+      height: auto;
+    }
+
+    .right-half .logo-text {
+      color: #ff914c;
+      font-size: 1rem;
     }
