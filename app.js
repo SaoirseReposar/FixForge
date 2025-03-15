@@ -46,6 +46,15 @@ app.get('/profile', (req, res) => {
   }
 });
 
+// User Account route (protected)
+app.get('/user_account.html', (req, res) => {
+  if (req.session.userId) {
+    res.sendFile(path.join(__dirname, 'public', 'user_account.html'));
+  } else {
+    res.redirect('/login-reg'); // Redirect to login form if not logged in
+  }
+});
+
 // Start the server
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);

@@ -36,9 +36,6 @@
         </div>
         <div class="site-mobile-menu-body"></div>
       </div>
-
-
-
       <header class="site-navbar site-navbar-target" role="banner">
         <div class="container">
           <div class="row align-items-center position-relative">
@@ -62,9 +59,10 @@
                   <li><a href="reviews.html" class="nav-link">Reviews</a></li>
                   <li><a href="about.html" class="nav-link">About Us</a></li>
                   <li><a href="contact.html" class="nav-link">Contact</a></li>
-                  <li class="active" id="login-register-link">
-                    <a href="user_account.html" class="nav-link">
-                      <img id="user-icon" src="images/usericon.png" alt="User Icon" style="width: 20px; height: 20px;">
+                  <li id="login-register-link">
+                    <a href="login-reg.html" class="nav-link">
+                      <span id="login-text">Login</span>
+                      <img id="user-icon" src="images/user_icon.png" alt="User Icon" class="hidden" style="width: 20px; height: 20px;">
                     </a>
                   </li>
                 </ul>
@@ -74,26 +72,22 @@
         </div>
       </header>
 
-
-      
       <div class="ftco-blocks-cover-1">
-      <div class="ftco-cover-1 overlay" style="background-image: url('images/hero_1.jpg')">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-lg-6">
-              <h1 class="line-bottom">My Profile</h1>
-            
-            
+        <div class="ftco-cover-1 overlay" style="background-image: url('images/hero_1.jpg')">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-lg-6">
+                <h1 class="line-bottom">My Profile</h1>
+              
                 <div class="container mt-5">
-                    <h2>My info</h2>
+                    <h2>My Info</h2>
                     <div id="user_info">
                         <p><strong>Username:</strong> <span id="username"></span></p>
                         <p><strong>Email:</strong> <span id="email"></span></p>
                         <p><strong>Address:</strong> <span id="address"></span></p>
                     </div>
 
-                    
-                    <h2>My bookings</h2>
+                    <h2>My Bookings</h2>
                     <table class="table table-hover table-bordered table-striped">
                         <thead class="bg-primary text-white">
                           <tr>
@@ -106,90 +100,81 @@
                           <!-- Booking data will be inserted here -->
                         </tbody>
                       </table>
+
+                      <!-- Logout Button -->
+                      <button id="logout-button" class="btn btn-danger btn-block">Logout</button>
                 </div>
+              </div>
             </div>
-
           </div>
         </div>
       </div>
-    </div>
 
-    
-
-    
-
-    
-
-    
-    
-
-    <footer class="site-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-3">
-            <h2 class="footer-heading mb-4">About Us</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis impedit, odit minima repellat, doloribus alias amet consequatur inventore.</p>
+      <footer class="site-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3">
+              <h2 class="footer-heading mb-4">About Us</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis impedit, odit minima repellat, doloribus alias amet consequatur inventore.</p>
+            </div>
+            <div class="col-lg-8 ml-auto">
+              <div class="row">
+                <div class="col-lg-3">
+                  <h2 class="footer-heading mb-4">Quick Links</h2>
+                  <ul class="list-unstyled">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                  </ul>
+                </div>
+                <div class="col-lg-3">
+                  <h2 class="footer-heading mb-4">Quick Links</h2>
+                  <ul class="list-unstyled">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                  </ul>
+                </div>
+                <div class="col-lg-3">
+                  <h2 class="footer-heading mb-4">Quick Links</h2>
+                  <ul class="list-unstyled">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                  </ul>
+                </div>
+                <div class="col-lg-3">
+                  <h2 class="footer-heading mb-4">Quick Links</h2>
+                  <ul class="list-unstyled">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-lg-8 ml-auto">
-            <div class="row">
-              <div class="col-lg-3">
-                <h2 class="footer-heading mb-4">Quick Links</h2>
-                <ul class="list-unstyled">
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">Testimonials</a></li>
-                  <li><a href="#">Terms of Service</a></li>
-                  <li><a href="#">Privacy</a></li>
-                  <li><a href="#">Contact Us</a></li>
-                </ul>
-              </div>
-              <div class="col-lg-3">
-                <h2 class="footer-heading mb-4">Quick Links</h2>
-                <ul class="list-unstyled">
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">Testimonials</a></li>
-                  <li><a href="#">Terms of Service</a></li>
-                  <li><a href="#">Privacy</a></li>
-                  <li><a href="#">Contact Us</a></li>
-                </ul>
-              </div>
-              <div class="col-lg-3">
-                <h2 class="footer-heading mb-4">Quick Links</h2>
-                <ul class="list-unstyled">
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">Testimonials</a></li>
-                  <li><a href="#">Terms of Service</a></li>
-                  <li><a href="#">Privacy</a></li>
-                  <li><a href="#">Contact Us</a></li>
-                </ul>
-              </div>
-              <div class="col-lg-3">
-                <h2 class="footer-heading mb-4">Quick Links</h2>
-                <ul class="list-unstyled">
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">Testimonials</a></li>
-                  <li><a href="#">Terms of Service</a></li>
-                  <li><a href="#">Privacy</a></li>
-                  <li><a href="#">Contact Us</a></li>
-                </ul>
+          <div class="row pt-5 mt-5 text-center">
+            <div class="col-md-12">
+              <div class="border-top pt-5">
+                <p>
+              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+              Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+              </p>
               </div>
             </div>
           </div>
         </div>
-        <div class="row pt-5 mt-5 text-center">
-          <div class="col-md-12">
-            <div class="border-top pt-5">
-              <p>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            </p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </footer>
-
+      </footer>
     </div>
 
     <script src="js/jquery-3.3.1.min.js"></script>
@@ -212,4 +197,3 @@
   </body>
 
 </html>
-

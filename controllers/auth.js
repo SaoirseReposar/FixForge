@@ -99,18 +99,14 @@ const authController = {
   logout: (req, res) => {
     req.session.destroy((err) => {
       if (err) {
-        return res.status(500).json({ success: false, message: 'Logout failed' });
+        return res.status(500).json({ success: false, message: "Logout failed" });
       }
-
-      // Log the session after destruction to confirm it's cleared
-      console.log('Session destroyed:', req.session);
-
-      // Clear the session cookie
-      res.clearCookie('connect.sid', { path: '/' });
-
-      res.status(200).json({ success: true, message: 'Logout successful' });
+  
+      res.clearCookie("connect.sid", { path: "/" });
+      res.status(200).json({ success: true, message: "Logout successful" });
     });
-  },
+  }
+  
 };
 
 module.exports = { User, authController };
